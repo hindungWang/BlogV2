@@ -16,7 +16,7 @@ export default class Info extends Component {
                                     <div className="columns is-vcentered">
                                         <div className="column is-7">
                                             <p>
-                                                If you have any
+                                                If you have any hhh
                                             </p>
                                             <p>
                                                 <strong className="shadow is-success question">
