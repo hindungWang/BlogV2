@@ -31,7 +31,7 @@ const Summary = ({blog_link}) => (
             <h5>致谢：</h5>
             <p>
                 部落格由前端和后端两部分组成，前端部分采用
-                <a className={`is-danger`} href="https://react.docschina.org">react.js</a> 
+                <a className={`is-danger`} href="https://react.docschina.org">React.js</a> 
                 编写，后端采用<a className={`is-danger`} href="https://golang.google.cn">Golang</a>
                 的
                 <a className={`is-danger`} href="https://github.com/gin-gonic/gin">GIN</a>
