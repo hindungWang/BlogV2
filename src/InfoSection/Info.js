@@ -8,22 +8,24 @@ const Introduction = ({className = '', introduction}) => (
 const Summary = ({blog_link}) => (
     <div className="column is-6">
         <div className="content hello">
-            <h2>Hello.</h2>
-            <h4>My name is Stephen Chang.</h4>
-            <p>I'm a
+            <h2>您好！</h2>
+            <h4>我叫黄显东。</h4>
+            <p>我是一个
                 <Introduction introduction={` `} />
-                <Introduction className={`is-danger`} introduction={`developer`} />、
-                <Introduction className={`is-danger`} introduction={`blogger`} />、
-                <Introduction className={`is-danger`} introduction={`vimer`} /> and 
+                <Introduction className={`is-danger`} introduction={`大傻子`} />、
+                <Introduction className={`is-danger`} introduction={`Gopher`} />、
+                <Introduction className={`is-danger`} introduction={`前端爱好者`} /> 和 
                 <Introduction introduction={` `} />
-                <Introduction className={`is-danger`} introduction={`open source activist`} />.
+                <Introduction className={`is-danger`} introduction={`开源代码白嫖怪`} />。
             </p>
             <p>
-                If you happen to speak Chinese, you can also find me on 
-                <a className={`zhihu-link shadow is-danger`} href="https://www.zhihu.com/people/19921213/answers"> 知乎</a> or <a className={`weibo-link shadow is-danger`} href="https://weibo.com/fee1dead">微博</a> for more up-to-date content.
+                这个【部落格】的目的是记录生活、工作上遇到的种种。如果您想联系我，这里是我的邮箱
+                <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> 或者 <a className={`is-danger`} href="">Telegram</a> 。
             </p>
+            <h2>こんにちは!</h2>
             <p>
-                Outside of programming, I enjoy staying with my wife and going on a road trip.
+                このブログの目的は生活を記録したり、仕事で出会ったりすることです。連絡したいなら、ここは私のメールボックスです:
+                <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> または  <a className={`is-danger`} href="">Telegram</a> 。
             </p>
         </div>
     </div>

@@ -12090,7 +12090,7 @@ print {
 }
 
 [class*="has-background"].has-background {
-  background-color: #fbfbfd
+  background-color: #F4F2EE
 }
 
 [class*="is-muted"].is-muted {
@@ -13086,7 +13086,8 @@ button:focus {
 .app-header .navbar {
   box-shadow: 0 1px 0 0 rgba(142, 81, 199, 0.05);
   transition-duration: 172ms;
-  will-change: min-height
+  will-change: min-height;
+  background-color: #EDEAE5;
 }
 
 @media screen and (max-width:768px) {

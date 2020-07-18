@@ -8,7 +8,7 @@ const Footer = React.lazy(() => import("./Footer/Footer"));
 export default class App extends Component {
 
 	componentDidMount() {
-		document.title = "A Sort Of A Blog";
+		document.title = "我爱一条柴";
 		this.node.scrollIntoView();
 	}
 

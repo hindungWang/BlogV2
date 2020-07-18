@@ -14,9 +14,10 @@ export default class Footer extends Component {
 									<div className="content">
 										<div className="columns is-vcentered">
 											<div className="column is-7">											
-												<p className="beian">粤ICP备19130368号-1</p>												
-												<p className="beian"><span className ="emoji" role ="img" aria-label="heart">❤</span>️如果五分钟后她必须进安检，如果安检在十米之外，那意味着，你们可以亲吻四分五十秒。</p>
-												<p className="beian">{`©2018-${new Date().getFullYear()} 清风. All rights reserved.`}</p>
+												<p className="beian">桂ICP备xxxx号-1</p>												
+												<p className="beian"><span className ="emoji" role ="img" aria-label="heart">✨</span>️but i am still around, yeah i am still around.</p>
+												<p className="beian"><span className ="emoji" role ="img" aria-label="heart">😍</span>️路漫漫其修远兮，吾将上下而求索。</p>
+												<p className="beian">{`©2018-${new Date().getFullYear()} 显东. All rights reserved.`}</p>
 											</div>
 										</div>
 									</div>
