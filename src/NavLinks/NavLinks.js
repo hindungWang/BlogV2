@@ -10,15 +10,15 @@ export default class NavLinks extends Component {
             links: [
                 {
                     link: `/`,
-                    title: `Home`
+                    title: `家`
                 },
                 {
                     link: `/blog/`+ new Date().getFullYear(),
-                    title: `Blog`
+                    title: `部落格`
                 },
                 {
                     link: `/blog/archive`,
-                    title: `Archive`
+                    title: `大海`
                 }
             ]
         }

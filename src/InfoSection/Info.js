@@ -27,6 +27,17 @@ const Summary = ({blog_link}) => (
                 このブログの目的は生活を記録したり、仕事で出会ったりすることです。連絡したいなら、ここは私のメールボックスです:
                 <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> または  <a className={`is-danger`} href="">Telegram</a> 。
             </p>
+
+            <h5>致谢：</h5>
+            <p>
+                部落格由前端和后端两部分组成，前端部分采用
+                <a className={`is-danger`} href="https://react.docschina.org">react.js</a> 
+                编写，后端采用<a className={`is-danger`} href="https://golang.google.cn">Golang</a>
+                的
+                <a className={`is-danger`} href="https://github.com/gin-gonic/gin">GIN</a>
+                框架编写，两者皆为开源代码。而前端框架是基于
+                <a className={`is-danger`} href="https://github.com/1ess">@1ess</a>同学开源的代码！代码目前托管在<a className={`is-danger`} href="https://github.com/1ess/BlogV2">Github</a>。
+            </p>
         </div>
     </div>
 )
