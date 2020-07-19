@@ -9,10 +9,10 @@ const Summary = ({blog_link}) => (
     <div className="column is-6">
         <div className="content hello">
             <h2>您好！</h2>
-            <h4>我叫黄显东。</h4>
-            <p>我是一个
+            <h4>我是显东。</h4>
+            <p>我是一名
                 <Introduction introduction={` `} />
-                <Introduction className={`is-danger`} introduction={`大傻子`} />、
+                <Introduction className={`is-danger`} introduction={`程序员`} />、
                 <Introduction className={`is-danger`} introduction={`Gopher`} />、
                 <Introduction className={`is-danger`} introduction={`前端爱好者`} /> 和 
                 <Introduction introduction={` `} />

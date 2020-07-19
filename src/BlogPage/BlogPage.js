@@ -10,7 +10,7 @@ import '../config.js';
 const BlogHeader = ({archive, year, headerTitle}) => (
     <nav className={`breadcrumb is-medium`}> 
         <ul> 
-            <li><Link to={archive ? `/blog/archive` : `/blog/2018`}><span className={`blog-link`}>{`Blogs`}</span></Link></li> 
+            <li><Link to={archive ? `/blog/archive` : `/blog/2020`}><span className={`blog-link`}>{`Blogs`}</span></Link></li> 
             <li><Link to={archive ? `/blog/archive` : `/blog/${year}`}><span className={`blog-link`}>{archive ? `archive` : year}</span></Link></li> 
             <li className={`is-active`}> <Link to={`#`}><span className={`blog-link`}>{headerTitle}</span></Link></li> 
         </ul>

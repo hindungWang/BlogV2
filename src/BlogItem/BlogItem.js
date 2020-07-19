@@ -25,13 +25,12 @@ const CardBody = ({year, number, title, date_time, summary}) => (
 
 const CardFooter = ({year, number}) => (
     <div className="card-footer">
-        <Link className="button is-primary is-outlined" to={`/blog/${year}/${number}`}> Read now </Link>
+        <Link className="button is-primary is-outlined" to={`/blog/${year}/${number}`}> 阅读 </Link>
     </div>
 )
 
 const Card = ({year, number, title, date_time, summary}) => (
     <div className={`card is-storyworld`}>
-        <CardHeader number={number} />
         <CardBody year={year} number={number} title={title} date_time={date_time} summary={summary} />
         <CardFooter year={year} number={number} />
     </div>

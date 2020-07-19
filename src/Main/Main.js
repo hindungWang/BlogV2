@@ -8,7 +8,7 @@ export default class Main extends Component {
 	render() {
 		return (
 			<main className="app-content has-background">
-				<Info blog_link={`/blog/2018`} />
+				<Info blog_link={`/blog/2020`} />
 			</main>
 		);
 	}
