@@ -9420,7 +9420,7 @@ print {
   .column.is-4-widescreen {
       -ms-flex: none;
       flex: none;
-      width: 33.33333%
+      /*width: 33.33333% */
   }
 
   .column.is-offset-4-widescreen {
@@ -12615,7 +12615,7 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 360px;
+  width: 100%;
   background-color: white;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   border-radius: 10px;

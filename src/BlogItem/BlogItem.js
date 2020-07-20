@@ -5,12 +5,6 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 import '../Blog.css';
 
-const CardHeader = ({number}) => (
-    <div className="card-header bg-gray">
-        <div className="card-image lazy" data-bg={`url(../blogImg/Blog${number}.jpg)`}></div>
-    </div>
-)
-
 const CardBody = ({year, number, title, date_time, summary}) => (
     <div className="card-body">
         <Link to={`/blog/${year}/${number}`}>
@@ -45,8 +39,11 @@ export default class BlogItem extends Component {
 
     render() {
         const { year, number, title, date_time, summary } = this.props;
+        // let arr = [1/3, 2/3];
+        // let index = Math.floor((Math.random()*2));
+        // let newWidth = arr[index] * 100;
         return (
-            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible">
+            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible" style={{ width: `${80}%` }}>
                 <Card year={year} number={number} title={title} date_time={date_time} summary={summary} />
             </div>
         );
