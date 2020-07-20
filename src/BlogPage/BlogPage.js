@@ -78,7 +78,23 @@ export default class BlogPage extends Component {
     
     render() {
         const {title, content, loading, error, archive} = this.state;
-        const {year, id} = this.props.match.params;
+        const {year, id, Network, Go, Gin, Docker} = this.props.match.params;
+        let names = '';
+        if (year != undefined) {
+            names = year
+        }
+        if (Network != undefined) {
+            names = Network;
+        }
+        if (Go != undefined) {
+            names = Go;
+        }
+        if (Gin != undefined) {
+            names = Gin;
+        }
+        if (Docker != undefined) {
+            names = Docker;
+        }
         return (
             <div ref={node => this.node = node} className={`app-container`}>
                 <Header symbol={`❤️`} selectedIndex={archive ? 2 : 1} />
@@ -87,7 +103,7 @@ export default class BlogPage extends Component {
                         <div className="container">
                             <div className={`columns is-centered`}>
                                 <div className={`column is-7-fullhd is-9-widescreen is-10-tablet`}>
-                                    <BlogHeader archive={archive} year={`${year}`} headerTitle={`${id}`} />
+                                    <BlogHeader archive={archive} year={`${names}`} headerTitle={`${id}`} />
                                     {
                                         loading
                                         ?

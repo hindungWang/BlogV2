@@ -12,13 +12,14 @@ import ErrorPage from './Error/Error';
 import WebFont from 'webfontloader';
 
 function generateYearList(length) {
-    return Array.from({ length: length }, (v, i) => `${i + 2018}`);
+    return Array.from({ length: length }, (v, i) => `${i + 2020}`);
 }
 
 const currentYear = new Date().getFullYear();
-const i = currentYear - 2017;
+const i = currentYear - 2019;
 const list = generateYearList(i);
 const years = list.join('|');
+console.log(years)
 
 ReactDOM.render((
     <Router>
@@ -26,6 +27,14 @@ ReactDOM.render((
             <Route exact path="/" component={App} />
             <Route exact path={`/blog/:year(${years})`} component={Blog} />
             <Route exact path={`/blog/:year(${years})/:id`} component={BlogPage} />
+            <Route exact path={`/blog/Docker`} component={Blog} />
+            <Route exact path={`/blog/Go`} component={Blog} />
+            <Route exact path={`/blog/Gin`} component={Blog} />
+            <Route exact path={`/blog/Network`} component={Blog} />
+            <Route exact path={`/blog/Docker/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:Go/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:Gin/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:Network/:id`} component={BlogPage} />
             <Route exact path="/blog/archive" component={BlogArchive} />
             <Route exact path={`/blog/archive/:year(${years})/:id`} component={BlogPage} />
             <Route exact path="/blog/app/:id" component={AppBlogDetail} />

@@ -24,6 +24,19 @@ export default class YearIndex extends Component {
         });
     }
 
+    handleClickKind = e => {
+        const {handleKindClick, currentYear} = this.props;
+        const kind = e.target.text;
+        document.title =  `${kind}`;
+        if (currentYear === kind) {
+            return;
+        }
+        handleKindClick({
+            value: 0,
+            kind
+        });
+    }
+
     generateYearList = length => {
         return Array.from({ length: length }, (v, i) => `${i + 2020}`);
     }
@@ -36,7 +49,7 @@ export default class YearIndex extends Component {
         const list = this.generateYearList(i);
         const label = new Array("Docker","Go","Gin", "Network");
         return (
-            <div className="column is-3 is-2-widescreen">
+            <div className="column is-3 is-2-widescreen" >
                 <div className="menu">
                     <p className="menu-label"> 岁岁年年 </p>
                     <ul className="menu-list">
@@ -50,7 +63,7 @@ export default class YearIndex extends Component {
                     <ul className="menu-list">
                         {label.map((item, index) =>{
                             return  <li key={index}>
-                            <Link className={(`year_filter ` + (year === item ? `is-active` : ``)).trim()} onClick={this.handleClick} to={`/blog/` + item}>{item}</Link>
+                            <Link className={(`year_filter ` + (year === item ? `is-active` : ``)).trim()} onClick={this.handleClickKind} to={`/blog/` + item}>{item}</Link>
                             </li>
                         }) }
                     </ul>

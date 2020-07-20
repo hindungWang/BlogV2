@@ -25,7 +25,7 @@ export default class BlogArchive extends Component {
         const self = this;
         axios({
             method: 'get',
-            url: `${global.constants.host}/api/blogs/year/all`,
+            url: `${global.constants.host}/api/blogs/all`,
             data: {}
         }).then(function (response) {
             self.setState({

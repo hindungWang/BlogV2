@@ -2636,7 +2636,7 @@ a.box:active {
 @media screen and (min-width:1408px) {
   .container {
       max-width: 1344px;
-      width: 1344px
+      width: 1344px;
   }
 }
 
@@ -9732,6 +9732,7 @@ print {
 }
 
 .columns {
+  /* float: right; */
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem
@@ -9788,7 +9789,8 @@ print {
 print {
   .columns:not(.is-desktop) {
       display: -ms-flexbox;
-      display: flex
+      display: flex;
+      /* justify-content: flex-end; */
   }
 }
 
