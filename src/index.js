@@ -19,7 +19,6 @@ const currentYear = new Date().getFullYear();
 const i = currentYear - 2019;
 const list = generateYearList(i);
 const years = list.join('|');
-console.log(years)
 
 ReactDOM.render((
     <Router>
