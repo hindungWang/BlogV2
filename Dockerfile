@@ -1,13 +1,17 @@
-FROM node:10
- 
-WORKDIR /usr/src/app
- 
+FROM node:alpine as builder
+
+RUN mkdir -p /app
+
+WORKDIR /app
+
 COPY . .
- 
-# Installs all node packages
-RUN npm install
- 
+RUN npm config set registry https://registry.npm.taobao.org
+RUN npm install && npm run build
+
+FROM nginx
+
+COPY --from=builder /app/build /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
- 
-# Finally runs the application
-CMD [ "npm", "start" ]
