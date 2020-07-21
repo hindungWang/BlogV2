@@ -80,19 +80,19 @@ export default class BlogPage extends Component {
         const {title, content, loading, error, archive} = this.state;
         const {year, id, Network, Go, Gin, Docker} = this.props.match.params;
         let names = '';
-        if (year != undefined) {
+        if (year !== undefined) {
             names = year
         }
-        if (Network != undefined) {
+        if (Network !== undefined) {
             names = Network;
         }
-        if (Go != undefined) {
+        if (Go !== undefined) {
             names = Go;
         }
-        if (Gin != undefined) {
+        if (Gin !== undefined) {
             names = Gin;
         }
-        if (Docker != undefined) {
+        if (Docker !== undefined) {
             names = Docker;
         }
         return (
