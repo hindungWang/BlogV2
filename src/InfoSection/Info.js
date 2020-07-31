@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import messageImg from '../undraw_hacker_mind.svg';
+import messageImg from '../79622454_p0.jpg';
 
 const Introduction = ({className = '', introduction}) => (
     <span className={(`shadow ${className}`).trim()}>{introduction}</span>

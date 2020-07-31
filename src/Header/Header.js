@@ -22,7 +22,7 @@ const NavBrand = ({icon, symbol})=> (
                 <div className="brand-icon">
                     <img className="present-icon" role="presentation" src={icon} alt="icon" />
                 </div>
-                <span className ="emoji" role ="img" aria-label="heart">{symbol}</span>无法长大
+                <span className ="emoji" role ="img" aria-label="heart">{symbol}</span>岁月长，衣裳薄
             </div>
         </div>
         <div className="navbar-burger burger" data-target="mainNav">
