@@ -22,11 +22,7 @@ const Summary = ({blog_link}) => (
                 这个【部落格】的目的是记录生活、工作上遇到的种种。如果您想联系我，这里是我的邮箱
                 <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> 或者 <a className={`is-danger`} href="">Telegram</a> 。
             </p>
-            <h2>こんにちは!</h2>
-            <p>
-                このブログの目的は生活を記録したり、仕事で出会ったりすることです。連絡したいなら、ここは私のメールボックスです:
-                <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> または  <a className={`is-danger`} href="">Telegram</a> 。
-            </p>
+
 
             <h5>致谢：</h5>
             <p>
