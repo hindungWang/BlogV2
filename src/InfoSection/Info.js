@@ -44,6 +44,7 @@ const Picture = () => (
             <div className="message is-shown">
                 <img className="message-img" src={messageImg} alt={``} />
             </div>
+            <p className="beian"><span className ="emoji" role ="img" aria-label="heart">🎨</span>Draw by ️<a href="https://www.pixiv.net/users/50047601">@Fangpeii</a> on Pixiv<span className ="emoji" role ="img" aria-label="heart">🎉</span></p>
         </div>
     </div>
 )
