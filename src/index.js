@@ -30,10 +30,11 @@ ReactDOM.render((
             <Route exact path={`/blog/Go`} component={Blog} />
             <Route exact path={`/blog/Gin`} component={Blog} />
             <Route exact path={`/blog/Network`} component={Blog} />
-            <Route exact path={`/blog/Docker/:id`} component={BlogPage} />
             <Route exact path={`/blog/:Go/:id`} component={BlogPage} />
             <Route exact path={`/blog/:Gin/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:Docker/:id`} component={BlogPage} />
             <Route exact path={`/blog/:Network/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:kind/:id`} component={BlogPage} />
             <Route exact path="/blog/archive" component={BlogArchive} />
             <Route exact path={`/blog/archive/:year(${years})/:id`} component={BlogPage} />
             <Route exact path="/blog/app/:id" component={AppBlogDetail} />
@@ -62,9 +63,7 @@ function getMultiLine(lines) {
 
 var slogan =
 `/*
-谁终将声震人间, 必长久深自缄默。
-
-谁终将点燃闪电, 必长久如云飘泊。
+人来人往。
 */`
 var style = [
     'color: #a0a0a0',
