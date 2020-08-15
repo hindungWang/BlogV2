@@ -78,22 +78,15 @@ export default class BlogPage extends Component {
     
     render() {
         const {title, content, loading, error, archive} = this.state;
-        const {year, id, Network, Go, Gin, Docker} = this.props.match.params;
+        const {year, id, kind} = this.props.match.params;
+        console.log(year)
+        console.log(id)
+        console.log(kind)
         let names = '';
         if (year !== undefined) {
             names = year
-        }
-        if (Network !== undefined) {
-            names = Network;
-        }
-        if (Go !== undefined) {
-            names = Go;
-        }
-        if (Gin !== undefined) {
-            names = Gin;
-        }
-        if (Docker !== undefined) {
-            names = Docker;
+        } else {
+            names = kind
         }
         return (
             <div ref={node => this.node = node} className={`app-container`}>

@@ -63,7 +63,7 @@ export default class YearIndex extends Component {
                     <ul className="menu-list">
                         {label.map((item, index) =>{
                             return  <li key={index}>
-                            <Link className={(`year_filter ` + (year === item ? `is-active` : ``)).trim()} onClick={this.handleClickKind} to={`/blog/` + item}>{item}</Link>
+                            <Link className={(`year_filter ` + (year === item ? `is-active` : ``)).trim()} onClick={this.handleClick} to={`/blog/` + item}>{item}</Link>
                             </li>
                         }) }
                     </ul>

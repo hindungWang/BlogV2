@@ -31,7 +31,7 @@ export default class Blog extends Component {
 			<div ref={node => this.node = node} className={`app-container`}>
 				<Header symbol={`❤️`} selectedIndex={1} />
 				<Suspense fallback={<div></div>}>
-					<BlogContainer year={year} handleYearChange={this.handleYearChange} />
+					<BlogContainer year={year} handleYearChange={this.handleYearChange}  />
                 </Suspense>
 			</div>
 		);

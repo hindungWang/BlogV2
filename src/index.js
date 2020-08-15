@@ -24,17 +24,8 @@ ReactDOM.render((
     <Router>
         <Switch>
             <Route exact path="/" component={App} />
-            <Route exact path={`/blog/:year(${years})`} component={Blog} />
-            <Route exact path={`/blog/:year(${years})/:id`} component={BlogPage} />
-            <Route exact path={`/blog/Docker`} component={Blog} />
-            <Route exact path={`/blog/Go`} component={Blog} />
-            <Route exact path={`/blog/Gin`} component={Blog} />
-            <Route exact path={`/blog/Network`} component={Blog} />
-            <Route exact path={`/blog/:Go/:id`} component={BlogPage} />
-            <Route exact path={`/blog/:Gin/:id`} component={BlogPage} />
-            <Route exact path={`/blog/:Docker/:id`} component={BlogPage} />
-            <Route exact path={`/blog/:Network/:id`} component={BlogPage} />
-            <Route exact path={`/blog/:kind/:id`} component={BlogPage} />
+            <Route exact path={`/blog/:year`} component={Blog} />
+            <Route exact path={`/blog/:year/:id`} component={BlogPage} />
             <Route exact path="/blog/archive" component={BlogArchive} />
             <Route exact path={`/blog/archive/:year(${years})/:id`} component={BlogPage} />
             <Route exact path="/blog/app/:id" component={AppBlogDetail} />
