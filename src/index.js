@@ -24,9 +24,9 @@ ReactDOM.render((
     <Router>
         <Switch>
             <Route exact path="/" component={App} />
+            <Route exact path="/blog/archive" component={BlogArchive} />
             <Route exact path={`/blog/:year`} component={Blog} />
             <Route exact path={`/blog/:year/:id`} component={BlogPage} />
-            <Route exact path="/blog/archive" component={BlogArchive} />
             <Route exact path={`/blog/archive/:year(${years})/:id`} component={BlogPage} />
             <Route exact path="/blog/app/:id" component={AppBlogDetail} />
             <Route component={ErrorPage} />
