@@ -200,7 +200,8 @@ pre {
   padding: 1.25rem 1.5rem;
   white-space: pre;
   word-wrap: normal;
-  background:  #2b303b;
+  background:  #e9e0d7;
+  border-radius: 50px 50px 50px 50px       
 }
 
 pre code {
