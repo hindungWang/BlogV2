@@ -13,7 +13,7 @@ code {
     monospace;
 }
   
-body, h1, h2, h3, h4, h5, h6, p, blockquote, li, a, li a,  li span, li a, li span, code, pre {
+body, h1, h2, h3, h4, h5, h6, p, blockquote, li, a, li a,  li span, li a, li span,  pre {
   font-family: '1essfont' !important;
 }
 
