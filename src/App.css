@@ -130,7 +130,7 @@ pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
   font-family: Consolas;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
 }
 
 body {
