@@ -129,7 +129,7 @@ code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: Consolas;
+  font-family: Consolas,monospace;
   /* white-space: pre-wrap; */
 }
 
