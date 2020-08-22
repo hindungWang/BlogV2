@@ -18,10 +18,21 @@ const Summary = ({blog_link}) => (
                 <Introduction introduction={` `} />
                 <Introduction className={`is-danger`} introduction={`开源代码白嫖怪`} />。
             </p>
+            <p>我对
+                <Introduction introduction={` `} />
+                <Introduction className={`is-danger`} introduction={`Golang`} />、
+                <Introduction className={`is-danger`} introduction={`React`} />、
+                <Introduction className={`is-danger`} introduction={`Kubernetes`} /> 、 
+                <Introduction className={`is-danger`} introduction={`Docker`} />、
+                <Introduction className={`is-danger`} introduction={`容器云`} />和
+                <Introduction className={`is-danger`} introduction={`云原生`} />感兴趣。
+            </p>
             <p>
-                这个【部落格】的目的是记录生活、工作上遇到的种种。如果您想联系我，这里是我的邮箱
+                这个【部落格】的目的是记录我从前往后对人、物、事情的看法。
+                如果您想联系我，这里是我的邮箱
                 <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> 或者 <a className={`is-danger`} href="">Telegram</a> 。
             </p>
+
 
 
             <h5>致谢：</h5>
