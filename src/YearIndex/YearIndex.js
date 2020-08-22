@@ -47,7 +47,7 @@ export default class YearIndex extends Component {
         const currentYear = new Date().getFullYear();
         const i = currentYear - 2019;
         const list = this.generateYearList(i);
-        const label = new Array("Docker","Go","Gin", "Network", "Kubernetes", "Algorithm");
+        const label = new Array("Docker","Go","Gin", "Network", "Kubernetes", "Algorithm", "LeetCode");
         return (
             <div className="column is-3 is-2-widescreen" >
                 <div className="menu">
