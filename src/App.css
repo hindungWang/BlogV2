@@ -9402,7 +9402,8 @@ print {
   .column.is-2-widescreen {
       -ms-flex: none;
       flex: none;
-      width: 16.66667%
+      width: 13%;
+      position: fixed
   }
 
   .column.is-offset-2-widescreen {
@@ -9738,6 +9739,10 @@ print {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem
+}
+
+.nothing {
+  width: 100%;
 }
 
 .columns:last-child {

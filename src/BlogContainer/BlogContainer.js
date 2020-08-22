@@ -226,10 +226,14 @@ export default class BlogContainer extends Component {
                 <section className={`section is-storyworlds has-background is-medium  special-container`}>
                         <div className={`container`}>
                             <div className={`columns`}>
+                                
                                 <YearIndex year={year} currentYear={year}  handleYearClick={this.handleYearClick} />
+                                <div className={`nothing`}></div>
                                 {
+                                   
                                     <BlogList year={year} items={items} loading={loading} error={error} empty={empty} transparent={transparent} />
                                 }
+    
                             </div>
                         </div>
                 </section>
