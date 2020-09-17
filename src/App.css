@@ -13889,3 +13889,19 @@ print {
     padding-top: 5rem;
   }
 }
+
+/* 添加左边可点击菜单栏 */
+#blog-tag {
+  position: fixed;
+  top: 205px;
+  right: 20px;
+  list-style: none;
+}
+#blog-tag a{
+  text-decoration:none;
+}
+#blog-tag>ul li{
+  list-style: none;
+  line-height: 16px;
+  font-size: 14px;
+}
