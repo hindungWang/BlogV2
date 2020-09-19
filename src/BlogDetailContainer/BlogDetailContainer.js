@@ -16,7 +16,6 @@ const BlogContent = ({title, content}) => {
             return `${highlighted}`;
           },
     });
-    console.log(markdown);
     return (
         <Fragment>
             <h1 className={`title is-spaced`}>{title}</h1>
@@ -49,10 +48,10 @@ export default class BlogDetailContainer extends Component {
         let arr = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6'));
         let htmlArr = arr.map((item)=>{
             let newItem;
-            item.localName === 'h1' ? newItem = `<li><a title='${item.innerText}' href='#${item.innerText}'>${item.innerText}</a></li>` : null;
-            item.localName === 'h2' ? newItem = `<ul><li><a title='${item.innerText}' href='#${item.innerText}'>${item.innerText}</a></li></ul>` : null;
-            item.localName === 'h3' ? newItem = `<ul><ul><li><a title='${item.innerText}' href='#${item.innerText}'>${item.innerText}</a></li></ul></ul>` : null;
-            item.localName === 'h4' ? newItem = `<ul><ul><ul><li><a title='${item.innerText}' href='#${item.innerText}'>${item.innerText}</a></li></ul></ul></ul>` : null;
+            item.localName === 'h1' ? newItem = `<li><a title='${item.innerText}' href='#${item.id}'>😆${item.innerText}</a></li>` : null;
+            item.localName === 'h2' ? newItem = `<ul><li><a title='${item.innerText}' href='#${item.id}'>😆${item.innerText}</a></li></ul>` : null;
+            item.localName === 'h3' ? newItem = `<ul><ul><li><a title='${item.innerText}' href='#${item.id}'>🤣${item.innerText}</a></li></ul></ul>` : null;
+            item.localName === 'h4' ? newItem = `<ul><ul><ul><li><a title='${item.innerText}' href='#${item.id}'>😉${item.innerText}</a></li></ul></ul></ul>` : null;
             return newItem;
         });
         htmlArr.shift();
