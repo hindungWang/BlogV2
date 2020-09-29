@@ -13892,9 +13892,11 @@ print {
 
 /* 添加左边可点击菜单栏 */
 #blog-tag {
+  display: block;
+  width: 20%;
   position: fixed;
-  top: 205px;
-  right: 20px;
+  top: 20%;
+  right: 5%;
   list-style: none;
 }
 #blog-tag a{
@@ -13902,6 +13904,10 @@ print {
 }
 #blog-tag>ul li{
   list-style: none;
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 21px;
+  font-size: 20px;
+}
+#blog-tag a:hover {
+  background-color: #e9e0d7;
+  color: #463853;
 }
