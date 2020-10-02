@@ -1,0 +1,32 @@
+name: BlogV2
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH Remote Commands
+      # You may pin to the exact commit or the version.
+      # uses: appleboy/ssh-action@bf84735fa9986d048980965656d55112e863f432
+      uses: appleboy/ssh-action@master
+      with:
+        # ssh host
+        host: hindung.cn
+        # synchronous execution if multiple hosts
+        # timeout for ssh to host
+        key: ${{secrets.SERVER_SSH_KEY}}
+        username: root
+        script: |
+          sudo su
+          cd /root/BlogV2
+          git pull
+          docker build . -t ui
+          cd /root/blog
+          docker-compose up -d
