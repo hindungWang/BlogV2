@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import messageImg from '../79622454_p0.jpg';
+import messageImg from '../spaceX.jpg';
 
 const Introduction = ({className = '', introduction}) => (
     <span className={(`shadow ${className}`).trim()}>{introduction}</span>
@@ -55,7 +55,7 @@ const Picture = () => (
             <div className="message is-shown">
                 <img className="message-img" src={messageImg} alt={``} />
             </div>
-            <p className="beian"><span className ="emoji" role ="img" aria-label="heart">❤</span>Draw by ️<a href="https://www.pixiv.net/users/50047601">@Fangpeii</a> on Pixiv<span className ="emoji" role ="img" aria-label="heart">🎉🎉</span></p>
+            <p className="beian"><span className ="emoji" role ="img" aria-label="heart">❤</span>My Conquest Is the Sea of Stars.<span className ="emoji" role ="img" aria-label="heart"></span>🚀🚀</p>
         </div>
     </div>
 )
