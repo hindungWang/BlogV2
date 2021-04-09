@@ -26,7 +26,7 @@ export default class BlogContainer extends Component {
         this._isMounted = true;
         const self = this;
         const {year} = this.props;
-        if (year === "2020") {
+        if (year === "2021" || year === "2020") {
             axios({
                 method: 'get',
                 url: `${global.constants.host}/api/blogs/year/${year}`,
@@ -72,7 +72,7 @@ export default class BlogContainer extends Component {
         } else {
             axios({
                 method: 'get',
-                url: `${global.constants.host}/api/blogs/year/${year}`,
+                url: `${global.constants.host}/api/blogs/kind/${year}`,
                 data: {},
                 cancelToken: new axios.CancelToken(function executor(c) {
                     self.cancel = c;
@@ -128,7 +128,7 @@ export default class BlogContainer extends Component {
             transparent: true
         });
         const self = this;
-        if (year === "2020") {
+        if (year === "2021" || year === "2020") {
             axios({
                 method: 'get',
                 url: `${global.constants.host}/api/blogs/year/${year}`,
@@ -174,7 +174,7 @@ export default class BlogContainer extends Component {
         } else {
             axios({
                 method: 'get',
-                url: `${global.constants.host}/api/blogs/year/${year}`,
+                url: `${global.constants.host}/api/blogs/kind/${year}`,
                 data: {},
                 cancelToken: new axios.CancelToken(function executor(c) {
                     self.cancel = c;
