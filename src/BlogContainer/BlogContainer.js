@@ -72,7 +72,7 @@ export default class BlogContainer extends Component {
         } else {
             axios({
                 method: 'get',
-                url: `${global.constants.host}/api/blogs/kind/${year}`,
+                url: `${global.constants.host}/api/blogs/year/${year}`,
                 data: {},
                 cancelToken: new axios.CancelToken(function executor(c) {
                     self.cancel = c;
@@ -174,7 +174,7 @@ export default class BlogContainer extends Component {
         } else {
             axios({
                 method: 'get',
-                url: `${global.constants.host}/api/blogs/kind/${year}`,
+                url: `${global.constants.host}/api/blogs/year/${year}`,
                 data: {},
                 cancelToken: new axios.CancelToken(function executor(c) {
                     self.cancel = c;

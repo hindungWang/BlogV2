@@ -26,6 +26,7 @@ jobs:
         script: |
           sudo su
           cd /root/BlogV2
+          git remote set-url origin git@github.com:hindungWang/BlogV2.git
           git pull
           docker build . -t ui
           cd /root/blog
