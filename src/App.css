@@ -13898,6 +13898,10 @@ print {
   top: 20%;
   right: 5%;
   list-style: none;
+  overflow-y: auto;
+}
+#blog-tag::-webkit-scrollbar{
+    display: none;
 }
 #blog-tag a{
   text-decoration:none;
@@ -13906,6 +13910,7 @@ print {
   list-style: none;
   line-height: 21px;
   font-size: 20px;
+  margin: 8px 0;
 }
 #blog-tag a:hover {
   background-color: #e9e0d7;
