@@ -74,7 +74,7 @@ export default class BlogDetailContainer extends Component {
         const { transparent, ifHidden } = this.state;
         return (
             <div style={{ display: 'flex', width: '100%' }}>
-                {!ifHidden && <div id="blog-tag" style={{ width: '20%' }}></div>}
+                { !ifHidden && <div id="blog-tag" style={{ width: '20%' }}></div>}
                 <div className={`content is-medium is-blog blog-alpha detail-alpha-zero`} style={{ opacity: transparent ? 0 : 1, width: ifHidden ? '100%' : '80%' }}>
                     <BlogContent title={title} content={content} />
                 </div>
