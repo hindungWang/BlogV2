@@ -10,7 +10,7 @@ const Nav = ({ selectedIndex }) => (
     <div className="navbar-menu" id="mainNav">
         <div className="navbar-end">
             <NavLinks selectedIndex={selectedIndex} />
-            <a href="https://github.com/mangoqiqi" className="navbar-item">宇宙</a>
+            <a href="https://github.com/hindungWang" className="navbar-item">宇宙</a>
         </div>
     </div>
 )
