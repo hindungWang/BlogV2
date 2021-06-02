@@ -28,9 +28,10 @@ const Summary = ({blog_link}) => (
                 <Introduction className={`is-danger`} introduction={`云原生`} />感兴趣。
             </p>
             <p>
-                这个【部落格】的目的是记录我从前往后对人、物、事情的看法。
-                如果您想联系我，这里是我的邮箱
-                <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a> 或者 <a className={`is-danger`} href="">Telegram</a> 。
+                这个【部落格】的目的是记录我工作中遇到的一些问题， <br />
+                点击右上角的【部落格】，汲取我的知识😜。<br /><br />
+                如果您想联系我，这里是我的邮箱:
+                <a className={`is-danger`} href="mailto:tangtione@qq.com"> tangtione@qq.com</a>。
             </p>
 
 
