@@ -30,6 +30,9 @@ const Card = ({year, number, title, date_time, summary}) => (
     </div>
 )
 
+let arr = [30, 40, 100];
+let sum = 0;
+
 export default class BlogItem extends Component {
     componentDidMount(){
         new LazyLoad({
@@ -39,11 +42,20 @@ export default class BlogItem extends Component {
 
     render() {
         const { year, number, title, date_time, summary } = this.props;
-        // let arr = [1/3, 2/3];
-        // let index = Math.floor((Math.random()*2));
-        // let newWidth = arr[index] * 100;
+        //let index = Math.floor((Math.random()*3));
+        let newWidth = 0;
+
+        //console.log("title: "+ summary + "len: " + )
+        if (summary.length <= 20){
+            newWidth = 20;
+        } else if (summary.length <= 60) {
+            newWidth = 40;
+        } else {
+            newWidth = 100;
+        }
+
         return (
-            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible" style={{ width: `${80}%` }}>
+            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible" style={{ width: `${newWidth}%` }}>
                 <Card year={year} number={number} title={title} date_time={date_time} summary={summary} />
             </div>
         );
