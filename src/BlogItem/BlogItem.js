@@ -34,15 +34,40 @@ let arr = [30, 40, 100];
 let sum = 0;
 
 export default class BlogItem extends Component {
-    componentDidMount(){
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            transparent: true,
+            ifHidden: false
+        };
+    }
+
+    componentDidMount = () => {
         new LazyLoad({
             elements_selector: ".lazy"
         });
+        const self = this;
+        setTimeout(function () {
+            self.setState({
+                transparent: false
+            });
+        }, 0);
+        document.body.offsetWidth > 1007 && this.render();
+        window.addEventListener('resize', this.handleResize.bind(this)) //监听窗口大小改变
+    }
+    componentWillUnmount = () => {
+        window.removeEventListener('resize', this.handleResize.bind(this));
+    }
+    handleResize = (e) => {
+        let e_width = e.target.innerWidth;
+        this.setState({ ifHidden: e_width > 1023 ? false : true }, () => !this.state.ifHidden && this.render());
+        // console.log('浏览器窗口大小改变事件', e.target);
     }
 
     render() {
         const { year, number, title, date_time, summary } = this.props;
-        //let index = Math.floor((Math.random()*3));
+        const { transparent, ifHidden } = this.state;
         let newWidth = 0;
 
         //console.log("title: "+ summary + "len: " + )
@@ -55,7 +80,8 @@ export default class BlogItem extends Component {
         }
 
         return (
-            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible" style={{ width: `${newWidth}%` }}>
+            <div className="column is-6 is-4-widescreen is-flex shuffle-item shuffle-item--visible" 
+            style={{ opacity: transparent ? 0 : 1, width: ifHidden ? '100%' : `${newWidth}%` }}>
                 <Card year={year} number={number} title={title} date_time={date_time} summary={summary} />
             </div>
         );
